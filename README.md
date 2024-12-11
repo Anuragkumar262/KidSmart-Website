@@ -10,5 +10,3 @@ ensuring that parents can shop conveniently from any device, at any time. KidSma
 reliable, and engaging experience for families, positioning itself as the go-to online destination for children’s
 products that enrich learning and foster creativity, while delivering convenience and peace of mind for
 parents.
- Hi I am Siddharth
-jggjgjhgjghg
