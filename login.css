@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    transition:all .3s;
+    user-select:none;
+  }
+  
+  
+  body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family: 'Open Sans', sans-serif;
+    background:#5a787b;
+  }
+  
+  
+  .kidsmart-login{
+    width:1000px;
+    height:600px;
+    display:flex;
+    box-shadow:0 0 10px #ccc;
+  }
+  
+  .kidsmart-login form{
+    background:#fff;
+    width:50%;
+    padding:25px 50px;
+  }
+
+                        
+  .kidsmart-login .poster{
+    width:50%;
+    background:url('kid-bachground.jpg');
+    background-size:cover;
+    background-position:33%;
+
+  }
+  
+  
+  .kidsmart-login form img{
+    width:80px;
+  }
+  
+  .kidsmart-login form .heading{
+    font-size:1.4em;
+    margin-top:15px;
+  }
+  
+  .kidsmart-login form p{
+    font-size:.95em;
+    color:#444;
+    margin-bottom:40px;
+  }
+  
+  .kidsmart-login form label{
+    display:block;
+    margin-top:20px;
+    color:#444;
+  }
+  
+  .kidsmart-login form input{
+    border:none;
+    outline:none;
+    border-bottom:1px solid #000;
+    width:100%;
+    padding:10px 0px;
+  }
+  
+  
+  
+  .kidsmart-login form .forgot{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:20px;
+    color:#444;
+    font-size:.85em;
+  }
+  
+  .kidsmart-login form .forgot label{
+    margin-top:0;
+    font-size:1em;
+  }
+  
+  .kidsmart-login form .forgot input{
+    width:auto;
+  }
+  
+  
+  .kidsmart-login form .forgot a{
+    color:#E72744;
+    cursor:pointer;
+  }
+  
+  
+  .kidsmart-login form button{
+    border:none;
+    outline:none;
+    margin-top:40px;
+    padding:12px 0px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .kidsmart-login form .login{
+    width:50%;
+    color:#fff;
+    background:#E72744;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .kidsmart-login form .login:hover{
+    background:#fff;
+    color:#E72744;
+    transform: translateY(-5px);
+  }
+  
+  .kidsmart-login form .signup{
+    width:45%;
+    color:#ca2840;
+    background:#fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .kidsmart-login form .signup:hover{
+    background:#e72744;
+    color:#fff;
+    transform: translateY(-5px);
+  }
+  
+  
+  @media (min-width: 0px) and (max-width: 800px){
+    
+    
+    .kidsmart-login{
+    display:block;
+    width:350px;
+    height:auto;
+    }
+    
+    .kidsmart-login form{
+      width:100%;
+      padding:40px 40px;
+    }
+    
+    .kidsmart-login .poster{
+      display:none;
+    }
+    
+    .kidsmart-login form .signup{
+    width: 38%;
+    }
+    
+  }
