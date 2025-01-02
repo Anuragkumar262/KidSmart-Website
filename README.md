@@ -31,5 +31,5 @@ If the repository includes a web server or project files that need to be run, fo
 ```
 npm start
 ```
-    (Or)
+  (Or)
 you can open the index.html file directly in your browser.
