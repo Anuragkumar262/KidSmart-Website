@@ -1,0 +1,799 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Codystar|Josefin+Slab&display=swap'); 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+a {
+    outline: 0;
+   
+    
+    }
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+img{
+    margin:0px;
+    max-width: 100%;
+    height: auto;
+    
+}
+.head-of-offer, .para-of-offer{
+    color:black
+}
+.index-main-img{
+    padding-top:50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width:748px){
+    .index-main-img{
+        padding-top:116px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
+@media screen and (min-width:300px){
+    .index-main-img{
+        padding-top:70px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
+@media screen and (min-width:200px){
+    .index-main-img{
+        padding-top:100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
+
+
+
+
+
+/* Add styles for the slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center; /* Center the slider container */
+}
+
+/* Styling for the slides container */
+.slides {
+    display: flex;
+    width: 100%; /* Set to 100% width for full container size */
+    height: 400px; /* Adjust height based on your image aspect ratio */
+    align-items: center; /* Vertically center the images */
+    justify-content: center; /* Horizontally center the images */
+    position: relative; /* For positioning the slides */
+}
+
+/* Apply different background colors for each slide */
+.slides a:nth-child(1) {
+    background-color: #ffffff; /* Light red */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+
+.slides a:nth-child(2) {
+    background-color: #ffffff; /* Light orange */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+
+.slides a:nth-child(3) {
+    background-color: #ffffff; /* Light green */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+
+.slides a:nth-child(4) {
+    background-color: #ffffff; /* Light blue */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+
+.slides a:nth-child(5) {
+    background-color: #ffffff; /* Light purple */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+.slides a:nth-child(6) {
+    background-color: #ffffff; /* Light purple */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+.slides a:nth-child(7) {
+    background-color: #ffffff; /* Light purple */
+    width: 100%; /* Use 100% width to cover the container */
+    flex-shrink: 0; /* Prevent shrinkage */
+}
+
+/* Ensure the images are centered and maintain their aspect ratio */
+.slides img {
+    max-width: 65%; /* Make sure image doesn't stretch wider than the container */
+    max-height: 100%; /* Prevent the image from exceeding container height */
+    height: auto; /* Maintain aspect ratio */
+    display: block;  /* Remove space below image */
+    margin: 0 auto;  /* Horizontally center the image */
+}
+
+/* Hide all slides initially */
+.slides a {
+    display: none;
+}
+
+/* Center the dots at the bottom of the slider */
+.dot-container {
+    position: absolute;
+    bottom: 15px; /* Adjusted position for visibility */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure dots are above the slider */
+    display: flex; /* Use flexbox for centering dots */
+    justify-content: center; /* Horizontally center the dots */
+}
+
+/* Style for individual dots */
+.dot {
+    height: 12px; /* Increased size for better visibility */
+    width: 12px; /* Increased size for better visibility */
+    margin: 0 5px;
+    background-color: #bbb; /* Default gray color */
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer; /* Makes the dots interactive */
+}
+
+/* Style for active dot */
+.dot.active {
+    background-color: #717171; /* Active dot color */
+}
+
+/* Styling for showing the active slide */
+.slides a.active {
+    display: block;
+}
+
+
+
+/* General Styles for the winter-collection */
+.winter-collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking up equal space */
+    grid-template-rows: repeat(2, auto); /* 2 rows, with automatic height based on content */
+    grid-gap: 16px; /* Space between grid items */
+    padding: 20px;
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Style for each image */
+.winter-image {
+    width: 100%; /* Make the images fill the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border-radius: 8px; /* Optional: rounded corners for the images */
+}
+
+/* Optional: Add media query for smaller screens to tweak layout */
+@media screen and (max-width: 768px) {
+    .winter-collection {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+        grid-template-rows: repeat(4, auto); /* 4 rows for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .winter-collection {
+        grid-template-columns: 1fr; /* Single column layout for very small screens */
+        grid-template-rows: repeat(8, auto); /* 8 rows for mobile screens */
+    }
+}
+.occasion img {    padding-left: 50px;
+    padding-right: 50px;
+    display: block;
+    margin: 0;
+  }
+  
+.pos{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+.occasion2 {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    gap: 0px; /* Space between images */
+  }
+  
+  .occasion2 img {
+    width: 100%; /* Make each image take the full width of its cell */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures images cover their grid cells */
+  }
+  
+  @media (max-width: 768px) {
+    .occasion2 {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .occasion2 {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  
+
+
+.index-offers-img{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-left:10px;
+    margin-right: 20px;
+
+}
+.index-grid-img-1{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    grid-gap:20px;
+    margin-left:20px;
+    margin-right: 20px;
+}
+
+
+
+.babycare {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .babycare img {
+    width: calc(15% - 10px);        /* Increase width further by 25% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+  .bathcare {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .bathcare img {
+    width: calc(15% - 10px);        /* Increase width further by 25% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+
+
+  .books{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .books img {
+    flex: 1 1 auto;        /* Allow images to grow and shrink evenly */
+    max-width: 16.7%;      /* Limit max width of each image */
+    height: auto;          /* Maintain aspect ratio */
+    object-fit: contain;   /* Prevent distortion */
+  }
+
+
+
+  .play {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .play img {
+    width: calc(17.4% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  .gdg {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .gdg img {
+    width: calc(17.4% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  .personal {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .personal img {
+    width: calc(17.4% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  .women {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .women img {
+    width: calc(17.4% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  .moms {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .moms img {
+    width: calc(17.4% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  /* Remove default margin and padding */
+.line{
+    margin: 0;
+    padding:0;
+}
+
+/* Remove margin from the images as well */
+.line img{
+    margin: 0;
+    padding-left: 50px;
+    object-fit: contain;  
+    display: block;  
+    padding-right: 50px;
+}
+
+
+  
+  
+  .gear {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: flex-start;    /* Align items to the start of the container */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0;                         /* Remove any gap between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+  
+  /* Image styling to fit within the screen */
+  .gear img {
+    width: calc(15% - 10px);        /* Further decrease the width by 5% from 19% to 18% */
+    height: auto;                   /* Maintain aspect ratio */
+    object-fit: contain;            /* Prevent distortion */
+    margin: 0;                      /* Remove any default margin */
+  }
+
+  
+
+.hotdeal {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: space-between; /* Space images evenly */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0px;                      /* Optional: space between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+
+  /* Image styling to fit within the screen */
+  .hotdeal img {
+    flex: 1 1 auto;        /* Allow images to grow and shrink evenly */
+    max-width: 12.5%;      /* Limit max width of each image */
+    height: auto;          /* Maintain aspect ratio */
+    object-fit: contain;   /* Prevent distortion */
+  }
+
+  .hotdeal2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;                  /* Activate Flexbox */
+    justify-content: space-between; /* Space images evenly */
+    align-items: center;            /* Vertically center images */
+    width: 100%;                    /* Full width of the screen */
+    gap: 0px;                      /* Optional: space between images */
+    overflow: hidden;               /* Prevent overflow */
+  }
+
+  /* Image styling to fit within the screen */
+  .hotdeal2 img {
+    flex: 1 1 auto;        /* Allow images to grow and shrink evenly */
+    max-width: 12.5%;      /* Limit max width of each image */
+    height: auto;          /* Maintain aspect ratio */
+    object-fit: contain;   /* Prevent distortion */
+  }
+  .daily {
+    display: flex;                     /* Activate Flexbox */
+    justify-content: flex-start;       /* Align items to the start of the container */
+    align-items: center;               /* Vertically center images */
+    padding-left: 50px;                /* Left padding */
+    padding-right: 50px;               /* Right padding */
+    width: 100%;                       /* Ensure full width of the screen */
+    box-sizing: border-box;            /* Include padding in the total width calculation */
+  }
+  
+  .daily img {
+    width: calc(53.5% - 50px);         /* Increase image width by 25% while accounting for padding */
+    height: auto;                      /* Maintain aspect ratio */
+    object-fit: contain;               /* Ensure the image fits within its container */
+    margin: 0;                         /* Remove any margin */
+  }
+  
+  .toy {
+    display: flex;                     /* Activate Flexbox */
+    justify-content: flex-start;       /* Align items to the start of the container */
+    align-items: center;               /* Vertically center images */
+    padding-left: 50px;                /* Left padding */
+    padding-right: 50px;               /* Right padding */
+    width: 100%;                       /* Ensure full width of the screen */
+    box-sizing: border-box;            /* Include padding in the total width calculation */
+  }
+  
+  .toy img {
+    width: calc(53.5% - 50px);         /* Increase image width by 25% while accounting for padding */
+    height: auto;                      /* Maintain aspect ratio */
+    object-fit: contain;               /* Ensure the image fits within its container */
+    margin: 0px;                         /* Remove any margin */
+  }
+
+
+  .gadget {
+    display: flex;                     /* Activate Flexbox */
+    justify-content: flex-start;       /* Align items to the start of the container */
+    align-items: center;               /* Vertically center images */
+    padding-left: 50px;                /* Left padding */
+    padding-right: 50px;               /* Right padding */
+    width: 100%;                       /* Ensure full width of the screen */
+    box-sizing: border-box;            /* Include padding in the total width calculation */
+  }
+  
+  .gadget img {
+    width: calc(53.8% - 50px);         /* Increase image width by 25% while accounting for padding */
+    height: auto;                      /* Maintain aspect ratio */
+    object-fit: contain;               /* Ensure the image fits within its container */
+    margin: 0px;                         /* Remove any margin */
+  }
+
+  .mom-care {
+    display: flex;                     /* Activate Flexbox */
+    justify-content: flex-start;       /* Align items to the start of the container */
+    align-items: center;               /* Vertically center images */
+    padding-left: 50px;                /* Left padding */
+    padding-right: 50px;               /* Right padding */
+    width: 100%;                       /* Ensure full width of the screen */
+    box-sizing: border-box;            /* Include padding in the total width calculation */
+  }
+  
+  .mom-care img {
+    width: calc(53.7% - 50px);         /* Increase image width by 25% while accounting for padding */
+    height: auto;                      /* Maintain aspect ratio */
+    object-fit: contain;               /* Ensure the image fits within its container */
+    margin: 0px;                         /* Remove any margin */
+  }
+
+/* Footer Content Layout */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centering */
+}
+
+/* Footer Background Color */
+.footer {
+    background-color: #bdc3c7; /* Soft grey background */
+    color: #2c3e50; /* Black text */
+    padding: 40px 0; /* Padding for spacing */
+}
+
+/* Footer Column */
+.footer-column {
+    width: 100%;
+    max-width: 22%; /* Less width for more spacing */
+    padding: 10px;
+}
+
+.footer-column h4 {
+    font-size: 18px; /* Slightly larger headings */
+    font-weight: 700;
+    color: #2c3e50; /* Black for headings */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer Links Styling */
+.footer-column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #2c3e50; /* Black for links */
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #f39c12; /* Vibrant yellow on hover */
+}
+
+/* Customer Assurance Section */
+.footer-assurance i {
+    color: #28a745; /* Green for positive assurance */
+    margin-right: 10px;
+}
+
+/* Social Media Section */
+.footer-social {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-social h4 {
+    font-size: 18px; /* Larger heading for better emphasis */
+    font-weight: 700;
+    color: #2c3e50; /* Black for social heading */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly larger scale */
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #2c3e50; /* Black text for footer bottom */
+    margin-top: 40px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #f39c12; /* Use yellow for clickable text */
+    font-weight: 700;
+}
+
+.footer-bottom a:hover {
+    color: #f1c40f; /* Slightly brighter yellow on hover */
+}
+
+/* Logo Styling */
+.footer-logo-img {
+    width: 200px; /* Adjust logo size */
+    margin-bottom: 15px; /* Space between logo and text */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        max-width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+        padding: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+    }
+
+    .footer-logo-img {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+}
+
+
+.info-of-img-below{
+    text-align:center;
+    color:#ffffff;
+    background-color: #f84258; 
+    height:30px;
+    padding-top:5px;
+}
+@media screen and (max-width:891px){
+    .info-of-img-below{
+        font-size:12px;
+    }
+}
+@media screen and (max-width:712px){
+    .info-of-img-below{
+        font-size:9px;
+    }
+}
+.index-grid-img-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:20px;
+    margin-left:20px;
+    margin-right: 20px;
+    
+}
+
+.index-grid-img-2 img:nth-child(3){
+    width:372px;
+    object-fit:cover;
+}
+.index-grid-img-2 img:nth-child(1){
+    width:253px;
+    object-fit:cover;
+}
+.index-grid-img-2 img:nth-child(4){
+    width:372px;
+    object-fit:cover;
+}
+.index-grid-img-2 img:nth-child(2){
+    width:273px;
+    object-fit:cover;
+}
+.index-grid-img-2 img:nth-child(5){
+    width:275px;
+    object-fit:cover;
+}
+.index-grid-img-2 img:nth-child(6){
+    width:275px;
+    object-fit:cover;
+}
+.head-of-offer{
+    padding-left:50px;
+}
+.para-of-offer{
+    padding-left:50px;
+}
+@media screen and (max-width:400px){
+    .head-of-offer{
+        font-size: 16px;
+    }
+    .para-of-offer{
+        font-size:11px;
+    }  
+}
+.index-grid-img-3{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-gap: 20px;
+    margin-left:20px;
+}
+@media screen and (max-width:1130px){
+    .index-grid-img-3{
+      padding-left:30px;
+      padding-right:30px;
+    }
+  }
+  
+
+
+
+
+
+

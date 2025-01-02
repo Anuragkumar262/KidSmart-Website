@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/style_index.css">
+    <style>
+        /* Global Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background: #f4f7fc;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 36px; /* You can adjust the size as needed */
+        }
+        
+
+        /* Contact Cards Grid */
+        .contact-cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            justify-items: center;
+        }
+
+        /* Individual Contact Card */
+        .contact-card {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            border: 2px solid transparent; /* Initial border */
+        }
+
+        /* Hover Effect */
+        .contact-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            border: 2px solid #3498db; /* Vibrant hover border */
+        }
+
+        /* Profile Image */
+        .contact-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-card:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Name */
+        .contact-card h4 {
+            font-size: 22px;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        /* Position */
+        .contact-card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Info */
+        .contact-card .contact-info a {
+            display: block;
+            font-size: 14px;
+            color: #3498db;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-card .contact-info a:hover {
+            color: #2c87c7;
+        }
+
+        /* Grid for Mobile Responsiveness */
+        @media (max-width: 1024px) {
+            .contact-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html" class="logo-name">
+                <img id="logo" src="images/logo/KidSmart_logo.png" alt="home page">
+            </a>
+        </div>
+    
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="signup.html" id="signup">Register</a></li>
+            <li><a href="login.html" id="login">Login</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+
+  <!-- Contact Section -->
+  
+      <br><h2>Meet Our Team</h2><br>
+
+      <div class="contact-cards">
+          <!-- Person 1 -->
+          <div class="contact-card">
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQGElxEb9jgiOQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1720953627232?e=2147483647&v=beta&t=hplpX0pjfwKErI3jAEzJ1RDSJt-LwZBpClvmJaZa2Fo" alt="John Doe">
+              <h4><b>Brijesh Verma</b></h4>
+              <p>Software Engineer</p>
+              <div class="contact-info">
+                  <a href="brijesh74580verma@gmail.com"><i class="fas fa-envelope"></i> brijesh74580verma@gmail.com</a>
+                  <a href="tel:+917458087997"><i class="fas fa-phone"></i> +91 7458087997</a>
+                  <a href="https://in.linkedin.com/in/brijesh-verma-48%E2%98%86" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+          </div>
+
+          <!-- Person 2 -->
+          <div class="contact-card">
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQH9uAT05SHziQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726323190692?e=2147483647&v=beta&t=X9budjoJwpPccLsNhyB7Kfc8a-4QRR--pzHMZkIqEQM" alt="Jane Smith">
+              <h4><b>Anurag Kumar</b></h4>
+              <p>UI/UX Developer</p>
+              <div class="contact-info">
+                  <a href="anuragjha262@gmail.com"><i class="fas fa-envelope"></i> anuragjha262@gmail.com</a>
+                  <a href="tel:+91 8285562699"><i class="fas fa-phone"></i> +91 8285562699</a>
+                  <a href="https://in.linkedin.com/in/anuragkumar262" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+          </div>
+
+          <!-- Person 3 -->
+          <div class="contact-card">
+              <img src="https://media.licdn.com/dms/image/v2/D5603AQGvlurj6SDmng/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1731697313939?e=2147483647&v=beta&t=oSVYViR4_1ks-zO7XUpi9Hrrp5YfEOB78-jiPkVkc5E" alt="Emily Johnson">
+              <h4><b>Shivam Pathak</b></h4>
+              <p>Marketing Manager</p>
+              <div class="contact-info">
+                  <a href="shivam.jee2207@gmail.com"><i class="fas fa-envelope"></i> shivam.jee2207@gmail.com</a>
+                  <a href="tel:+917607525474"><i class="fas fa-phone"></i> +91 7607525474</a>
+                  <a href="https://in.linkedin.com/in/shivam-pathak-89a4b2294" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+          </div>
+
+          <!-- Person 4 -->
+          <div class="contact-card">
+              <img src="https://media.licdn.com/dms/image/v2/D4E03AQEhRHbX3sOUyA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718255642180?e=2147483647&v=beta&t=ZpP8BBrabIjxgnTdbGpIpSsuOcOTpiCIFOr7cb86Scc" alt="Michael Brown">
+              <h4><b>Siddharth Yadav</b></h4>
+              <p>Product Designer</p>
+              <div class="contact-info">
+                  <a href="siddharthyadav8016@gmail.com"><i class="fas fa-envelope"></i> siddharthyadav8016@gmail.com</a>
+                  <a href="tel:+91 7579377279"><i class="fas fa-phone"></i> +91 7579377279</a>
+                  <a href="https://in.linkedin.com/in/siddharth-yadav-13aa482b0?original_referer=https%3A%2F%2Fin.search.yahoo.com%2F" target="_blank"rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
+              </div>
+          </div>
+      </div>
+  
+  <script type="text/javascript" src="js/nav.js"></script>
+  <br><br>
+    <div class="footer-container">
+        <div class="footer-content">
+          <!-- Brand Section -->
+          <div class="footer-column footer-logo">
+            <a href="index.html">
+              <!-- Add logo image here -->
+              <img src="images/logo/KidSmart_logo.png" alt="Kidsmart Store Logo" class="footer-logo-img">
+            </a>
+            <p><strong>Bringing Smiles to Little Ones</strong></p>
+            <p>Your one-stop shop for the best collections for kids!</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+      
+          <!-- Useful Information -->
+          <div class="footer-column">
+            <h4>Useful Information</h4>
+            <ul>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+      
+          <!-- Customer Assurance -->
+          <div class="footer-column footer-assurance">
+            <h4>Our Promise to You</h4>
+            <ul>
+              <li><i class="fa fa-check-circle"></i> 100% Original Products</li>
+              <li><i class="fa fa-check-circle"></i> 30-Day Easy Returns</li>
+              <li><i class="fa fa-check-circle"></i> Free Delivery on Orders Above Rs.999</li>
+            </ul>
+          </div>
+        </div>
+      
+        <!-- Social Media Section -->
+       
+        <div class="footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://facebook.com/kidsmart" target="_blank" class="social-icon facebook"rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com/kidsmart" target="_blank" class="social-icon instagram"rel="noopener"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/kidsmart" target="_blank" class="social-icon twitter"rel="noopener"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com/kidsmart" target="_blank" class="social-icon youtube"rel="noopener"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 <a href="index.html">Kidsmart</a> - All Rights Reserved</p>
+        </div>
+      </div>
+</body>
+</html>

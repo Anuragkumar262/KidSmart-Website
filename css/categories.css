@@ -1,0 +1,237 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and page setup */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+
+
+
+/* Product Showcase Section */
+.products-showcase {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.products-showcase h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    overflow: visible; /* Ensuring the shadow is not clipped */
+}
+
+/* Product Card */
+.product-card {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Initial shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, height 0.3s ease; /* Added height transition */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1; /* Ensure it's above other content */
+    position: relative; /* For absolute positioning of child elements */
+    height: 600px; /* Set a fixed height initially */
+    overflow: hidden; /* Hide overflowed content */
+}
+
+/* Hover effect on product card */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.2); /* Add border-like shadow */
+    height: 800px; /* Expands the card when hovered */
+    border: 2px solid #4CAF50; /* Green border around the card on hover */
+}
+
+/* Product Image Container */
+.product-image {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjusts the image to cover the space properly */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: opacity 1s ease;
+}
+
+/* Hover effect on product image */
+.product-image .hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+    z-index: 2;
+}
+
+.product-image:hover .hover-image {
+    opacity: 1;
+}
+
+/* Product Title */
+.product-card h3 {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: black;
+}
+
+/* Product Description */
+.product-card .product-description {
+    font-size: 0.85rem;
+    color: #666;
+    margin: 5px 0;
+    text-align: center;
+    padding: 0;
+    flex-grow: 0;
+    display: block;
+    width: 100%;
+    z-index: 3; /* Ensure it's above other elements */
+}
+
+/* Price styling with discount */
+.product-card .original-price {
+    font-size: 1rem;
+    color: #999;
+    text-decoration: line-through; /* Strikethrough the original price */
+    margin-right: 50px; /* Space between original and discounted price */
+}
+
+.product-card .discount-price {
+    font-size: 1.2rem;
+    color: #FF4081; /* Highlight the discount price */
+    font-weight: 500;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #FF4081;
+    margin: 5px 0 15px;
+}
+
+/* Size Selector - Age Selection Buttons */
+.size-selection {
+    margin-bottom: 15px;
+    text-align: left;
+    opacity: 0; /* Initially hidden */
+    height: 0; /* Collapsed */
+    overflow: hidden; /* Hides the content */
+    transition: opacity 0.3s ease, height 0.3s ease; /* Smooth transition */
+    margin-top: 10px; /* Adjust spacing when revealed */
+    z-index: 4; /* Ensure it's above other elements */
+}
+
+/* Show size selection when hovering over the card */
+.product-card:hover .size-selection {
+    opacity: 1; /* Make size selection visible */
+    height: auto; /* Expand the size selection */
+}
+
+/* Size Buttons */
+.size-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.size-btn {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1 0 100px; /* Flex for responsiveness */
+    text-align: center;
+}
+
+.size-btn:hover {
+    background-color: #FF4081;
+    color: white;
+    border-color: #FF4081;
+}
+
+.size-btn:active {
+    transform: scale(0.98); /* Button shrink effect when clicked */
+}
+
+.size-btn.selected {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Product Actions Buttons (Add to Cart, Wishlist) */
+.product-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+}
+
+.add-to-cart:hover {
+    background-color: #45a049;
+}
+
+.add-to-wishlist {
+    background-color: #FF4081;
+}
+
+.add-to-wishlist:hover {
+    background-color: #f35b7f;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .size-btn {
+        flex: 1 0 80px; /* Adjust flex for better fit on smaller screens */
+    }
+}

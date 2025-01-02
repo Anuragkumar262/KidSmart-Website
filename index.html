@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/nav.css">
+    
+</head> 
+<body>  
+  <nav>
+    <div class="logo">
+        <a href="index.html" class="logo-name">
+            <img id="logo" src="images/logo/KidSmart_logo.png" alt="home page">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="signup.html" id="signup">Register</a></li>
+        <li><a href="login.html" id="login">Login</a></li>
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+
+    <!-- navbar -->
+
+    <!-- ALL THE LINKS WILL GO TO categories.html -->
+      <!-- Automatic Slider -->
+      <div class="slider-container">
+        <div class="slides">
+            <a href="categories.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/roi_desktop_h_w_def_271124_041735376671614.webp" alt="Slide 1"></a>
+            <a href="index.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/mktng_nonapps_base_happinessstore45_hp_29december241735296729606.webp" alt="Slide 2"></a>
+            <a href="index.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/desk1734674607902.webp" alt="Slide 3"></a>
+            <a href="index.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/mktng_nonapps_base_toys_hp_29december241735295729354.webp" alt="Slide 4"></a>
+            <a href="merlin.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/hp_mktg_p12_prim_flat50_north_desktop1732535319575.webp" alt="Slide 5"></a>
+            <a href="merlin.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/mktng_wpc_desktop1735627168721.webp" alt="Slide 6"></a>
+            <a href="merlin.html"><img src="https://cdn.fcglcdn.com/brainbees/banners/feeding_1jan_def_dekstop_mt1735282059011.webp" alt="Slide 7"></a>
+          </div>
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        let slideIndex = 0;
+        let slides = document.querySelectorAll('.slides a');
+        let dots = document.querySelectorAll('.dot');
+        
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+            slides[slideIndex - 1].style.display = "block";  
+            dots[slideIndex - 1].classList.add("active");
+        }
+        
+        setInterval(showSlides, 3000); // Change image every 3 seconds
+        showSlides(); // Initialize the slider
+    </script>
+    
+   
+
+  <div class="index-offers-img">
+        <a href="accessory2.html"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/35273.webp" alt="" ></a>
+        <a href="categories.html"><img src="https://static.hopscotch.in/fstatic/product/202412/20080c40-11ed-47bb-9454-81d0459b4360_full.jpg?version=1733309255199&tr=f-webp,w-480,c-at_max,dpr-2,n-medium" alt=""></a>
+        <a href="birthday.html"><img src="https://static.hopscotch.in/fstatic/product/202412/12887965-6fd3-42e3-85cb-8371aff0fbf4_full.jpg?version=1735193311415&tr=f-webp,w-480,c-at_max,dpr-2,n-medium" alt=""></a>
+        <a href="weeding.html"><img src="https://cdn.fcglcdn.com/brainbees/images/boutique/670x670/34642.webp" alt=""></a>
+   </div>
+
+   <br><br>
+
+   <div class="index-grid-img-1">
+      <a href="travel.html"><img src="https://static.hopscotch.in/fstatic/product/202412/cf31bd09-1e0c-4ae8-832a-aeda3d669b82_full.jpg?version=1733132786023&tr=f-webp,w-480,c-at_max,dpr-2,n-medium" alt="" srcset=""></a>
+      <a href="travel.html"><img src=".\images\index-img\advkid2.png" alt="" srcset=""></a>
+      <a href="travel.html"><img src=".\images\index-img\kid45.png" alt=""></a>
+      <a href="travel.html"><h4 class="info-of-img-below">Vacation must have styles</h4></a>          
+      <a href="travel.html"><h4 class="info-of-img-below">Just like your way to Conquer</h4></a>
+      <a href="travel.html"><h4 class="info-of-img-below">Stands out like the Sun</h4></a>
+    </div>
+    <!-- ALL THE LINKS WILL GO TO categories.html -->
+        
+    <div class="new-arrivals" style="padding-left: 50px; padding-right: 50px;">
+      
+      <img style="width: 100%; vertical-align: middle;" title="New Arrivals" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_def_hw_241024_01.jpg" alt="New Arrivals">
+      <img style="width: 100%; vertical-align: middle;" title="New Arrivals" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/desktop_def_hw_241024_02.jpg" alt="New Arrivals">
+      <img style="width: 100%; vertical-align: middle;" title="New Arrivals" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_05.jpg" alt="New Arrivals">
+    </div>
+  
+    <div class="winter-collection" style="padding-left: 50px; padding-right: 50px;">
+      <a href="categories.html">
+      <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_06.jpg" alt="moas_def_Sweaters">
+    </a>
+    <a href="categories.html">
+      <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_07.jpg" alt="moas_def_Sweaters">
+      </a>
+      <a href="categories.html">
+        <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_08.jpg" alt="moas_def_Sweaters">
+       </a>
+       <a href="categories.html"><img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_09.jpg" alt="moas_def_Sweaters">
+      </a>
+      <a href="categories.html">
+        <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_10.jpg" alt="moas_def_Sweaters">
+      </a>
+      <a href="categories.html">
+        <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_11.jpg" alt="moas_def_Sweaters">
+      </a>
+      <a href="categories.html">
+        <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_12.jpg" alt="moas_def_Sweaters">
+      <a href="categories.html">
+        <img style="width: 100%; vertical-align: middle;" title="moas_def_Sweaters" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_13.jpg" alt="moas_def_Sweaters">
+      </a>
+    </div> 
+    <div class="pos" >
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_59.jpg" alt="occasion-wear">
+    </div>
+    <div class="occasion">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_60.jpg" alt="occasion-wear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_61.jpg" alt="occasion-wear">
+    </div>
+    
+    <div class="occasion2">
+      <a href="christmas.html">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_62.jpg" alt="occasion-wear">  </a>
+      <a href="birthday.html">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_131224_63.jpg" alt="occasion-wear"></a>
+      <a href="weeding.html">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_64.jpg" alt="occasion-wear"></a>
+    </div>
+
+    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_71.jpg"style="padding-left: 50px; padding-right: 50px;" alt="hot">
+   
+    <div class="hotdeal-container">
+      <a href="accessories.html" class="hotdeal-link">
+          <div class="hotdeal">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_72.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_73.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_74.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_75.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_76.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_77.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_78.jpg" alt="hot">
+              <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_79.jpg" alt="hot">
+          </div>
+      </a>
+  </div>
+  
+    
+    <img style="padding-left: 50px; padding-right: 50px;" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_80.jpg" alt="hot">
+    
+    <div class="acc-container">
+      <a href="accessory2.html" class="acc-link"> 
+              <div class="hotdeal2">
+     
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_81.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_82.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_83.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_84.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_85.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_86.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_87.jpg" alt="hot">
+                <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_88.jpg" alt="hot">
+              </div>
+      </a>
+    </div>
+
+
+
+    <img style="padding-left: 50px; padding-right: 50px; display: block;" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_desk_def_021224_89.jpg" alt="hot">
+    
+    <div class="daily" >
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_02.jpg" alt="daily">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_03.jpg" alt="daily">
+    </div>
+    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_04.jpg" alt="baby0">
+
+    <div class="care-container">
+      <a href="dailycare.html" class="care-link"> 
+        <div class="babycare">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_05.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_06.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_07.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_08.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_09.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_10.jpg" alt="baby">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_11.jpg" alt="baby">
+        </div>
+      </a>
+    </div>
+
+
+    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_12.jpg" alt="bathc">
+
+    <div class="bath-container">
+      <a href="bathcare.html" class="bath-link"> 
+    <div class="bathcare">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_13.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_14.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_15.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_16.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_17.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_18.jpg" alt="bath">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_19.jpg" alt="bath">
+    </div> 
+    </a>
+    </div>
+    
+    
+    <br>  
+    <div class="toy" >
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_131.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_132.jpg" alt="toy">
+    </div> <br>
+
+    <div class="play-container">
+      <a href="play.html" class="play-link"> 
+    <div class="play">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_134.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_135.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_136.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_137.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_138.jpg" alt="toy">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_139.jpg" alt="toy">
+    </div>
+    </a>
+    </div>
+    
+    
+    
+    <br>
+    <img style="padding-left: 50px; padding-right: 50px;" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_37.jpg" alt="toy">
+    <br>
+    <div class="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_39.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_51.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_47.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_50.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_44.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_43.jpg" alt="gear">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_48.jpg" alt="gear">
+    </div> <br>
+
+
+    <img style="padding-left: 50px; padding-right: 50px;" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_67.jpg" alt="">
+    <br>
+
+    <div class="book-container">
+      <a href="bathcare.html" class="book-link"> 
+    <div class="books">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_69.jpg" alt="book">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_70.jpg" alt="book">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_71.jpg" alt="book">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_72.jpg" alt="book">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_73.jpg" alt="book">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_74.jpg" alt="book">
+     
+    </div> 
+    </a>
+    </div>
+    <br>  
+
+    <div class="gadget" >
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_114.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_115.jpg" alt="">
+    </div> <br>
+
+    <div class="gdg">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_117.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_118.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_119.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_120.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_121.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_122.jpg" alt="">
+
+    </div><br>
+    <div class="gdg">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_124.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_125.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_126.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_127.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_128.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_129.jpg" alt="">
+    </div>
+    
+    <img style="padding-left: 50px; padding-right: 50px;display: block;"src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_02.jpg" alt="">
+    <div class="personal">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_03.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_04.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_05.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_06.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_07.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/hwinter24_desktop_landing_121124_03_08.jpg" alt="">
+    </div>
+    <img style="padding-left: 50px; padding-right: 50px;display: block;" src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_173.jpg" alt="">
+
+    <div class="women">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_174.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_175.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_176.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_177.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_178.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_179.jpg" alt="">
+    </div><br>
+
+    <div class="women">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_181.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_182.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_183.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_184.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_185.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_186.jpg" alt="">
+    </div><br>
+
+
+    <div class="mom-care" >
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_97.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_98.jpg" alt="">
+    </div> 
+    <div class="line">
+    <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_99.jpg" alt="">
+  </div>
+    
+    <div class="moms">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_100.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_101.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_102.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_103.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_104.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_105.jpg" alt="">
+    </div>
+    <div class="line">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_106.jpg" alt="">
+    </div>
+      
+    <div class="moms">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_107.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_108.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_109.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_110.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_111.jpg" alt="">
+      <img src="https://cdn.fcglcdn.com/brainbees/images/cattemplate/moas_winter24_desktop_nonapp_041224_112.jpg" alt="">
+    </div><br>
+
+ 
+<BR><BR>
+ <!-- FOOTER -->
+<div class="footer-container">
+  <div class="footer-content">
+    <!-- Brand Section -->
+    <div class="footer-column footer-logo">
+      <a href="index.html">
+        <!-- Add logo image here -->
+        <img src="images/logo/KidSmart_logo.png" alt="Kidsmart Store Logo" class="footer-logo-img">
+      </a>
+      <p><strong>Bringing Smiles to Little Ones</strong></p>
+      <p>Your one-stop shop for the best collections for kids!</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </div>
+
+    <!-- Useful Information -->
+    <div class="footer-column">
+      <h4>Useful Information</h4>
+      <ul>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Customer Assurance -->
+    <div class="footer-column footer-assurance">
+      <h4>Our Promise to You</h4>
+      <ul>
+        <li><i class="fa fa-check-circle"></i> 100% Original Products</li>
+        <li><i class="fa fa-check-circle"></i> 30-Day Easy Returns</li>
+        <li><i class="fa fa-check-circle"></i> Free Delivery on Orders Above Rs.999</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Social Media Section -->
+  <div class="footer-social">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="https://facebook.com/kidsmart" target="_blank" class="social-icon facebook"rel="noopener"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com/kidsmart" target="_blank" class="social-icon instagram"rel="noopener"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/kidsmart" target="_blank" class="social-icon twitter"rel="noopener"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com/kidsmart" target="_blank" class="social-icon youtube"rel="noopener"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 <a href="index.html">Kidsmart</a> - All Rights Reserved</p>
+  </div>
+</div>
+
+
+  <script type="text/javascript" src="js/nav.js"></script>
+  </body>
+</html>

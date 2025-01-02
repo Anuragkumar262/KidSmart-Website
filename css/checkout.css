@@ -1,0 +1,215 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif; /* Modern sans-serif font for clear readability */
+    background-color: #f4f7fa; /* Soft background color for a clean, professional feel */
+    color: #333; /* Dark text for better readability */
+    line-height: 1.6; /* Adequate line spacing for easy reading */
+    padding: 20px;
+    font-size: 16px; /* Base font size for consistency */
+}
+
+/* Container Styling */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff; /* Clean white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Softer, more professional shadow */
+}
+
+/* Header Styling */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600; /* Strong, readable header */
+    letter-spacing: 1px; /* Slight letter spacing for elegance */
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout for better readability */
+    gap: 0px;
+}
+
+/* Label Styling */
+label {
+    font-size: 1rem;
+    color: #555; /* Dark gray text for labels */
+    font-weight: 500; /* Subtle emphasis */
+    margin-bottom: 8px;
+}
+
+/* Input, Select, and Card Styling */
+input, select, .card-element {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+    background-color: #f9f9f9; /* Soft background for form fields */
+    color: #333; /* Dark text inside inputs */
+}
+
+/* Focused Input Styling */
+input:focus, select:focus, .card-element:focus {
+    border-color: #007BFF; /* Blue border for active input */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Light blue glow on focus */
+}
+
+/* Special Styling for Text Inputs */
+input[type="text"], input[type="email"], input[type="tel"] {
+    text-transform: capitalize;
+}
+
+/* Styling for Select Dropdown */
+select {
+    cursor: pointer;
+}
+
+/* Card Payment Section */
+#card-info {
+    display: block; /* Default to showing card payment info */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#card-element {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* UPI App Selection Section */
+#upi-app-selection {
+    display: none; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out;
+}
+
+#upi-app {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Error Message Styling */
+#card-errors {
+    font-size: 0.9rem;
+    color: red;
+    padding: 5px 0;
+    margin-top: -5px;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    background-color: #007BFF; /* Primary blue button color */
+    color: #fff; /* White text for contrast */
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 600; /* Strong font weight for action buttons */
+    border: none;
+    border-radius: 6px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transitions */
+    width: 100%; /* Full-width button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Payment Method Dropdown */
+#payment-method {
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 4px;
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    color: #555; /* Subtle text color for footer */
+    line-height: 1.4; /* Proper spacing for footer text */
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Slightly smaller title on tablet screens */
+    }
+
+    form {
+        grid-template-columns: 1fr; /* Full width for better layout */
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, select, button {
+        font-size: 0.95rem;
+        padding: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Slightly smaller font on small screens */
+    }
+
+    input, select, button {
+        font-size: 0.9rem;
+        padding: 12px;
+    }
+}
+
+/* Transitions for Showing and Hiding Elements */
+#card-info, #upi-app-selection {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+#card-info.hidden, #upi-app-selection.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Styles for when the form elements are hidden */
+.hidden {
+    display: none;
+}
+

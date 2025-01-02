@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - KidSmart</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <img src="images/logo/KidSmart_logo.png" alt="KidSmart Logo">
+            <h2>Create Your Account</h2>
+            <p>Welcome to KidSmart. Sign up to explore solutions for all your kid's needs.</p>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+
+                <!-- Password field with visibility toggle -->
+                <div class="password-container">
+                    <input type="password" placeholder="Password" required id="password">
+                    <span class="eye-icon" id="togglePassword">👁️</span>
+                </div>
+
+                <!-- Confirm Password field with visibility toggle -->
+                <div class="password-container">
+                    <input type="password" placeholder="Confirm Password" required id="confirmPassword">
+                    <span class="eye-icon" id="toggleConfirmPassword">👁️</span>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <a href="login.html" class="login-link">Already have an account? Log in</a>
+        </div>
+        <div class="image-section"></div>
+    </div>
+
+    <script src="js/signup.js"></script> <!-- Link to external JS file -->
+</body>
+</html>

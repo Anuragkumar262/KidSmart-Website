@@ -1,0 +1,139 @@
+ /* General Navigation Styles */
+nav {
+    display: flex;
+    justify-content: ce; /* Align items on opposite ends: logo left, nav links right */
+    align-items: center;
+    min-height: 5vh;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    
+}
+
+
+/* Logo styling */
+.logo {
+    display: flex; /* Ensure the logo container is treated as a flex item */
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-top: 20px; /* Align the logo container to the left */
+}
+
+#logo {
+    width: 250px;  /* Adjust the size of the logo */
+    height: auto;  /* Keep aspect ratio intact */
+}
+
+/* Other existing styles for navigation links and burger menu */
+a {  
+    text-decoration: none;
+}
+
+nav a {
+    color: black;
+}
+
+nav a:hover {
+    color: #f84258;
+    text-decoration: none;
+}
+
+#login {
+    color: #f84258;
+}
+
+.logo-name:hover {
+    color: #f84258;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 400px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.burger div {
+    background-color: #f84258;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+        #logo {
+        width: 120px;  /* Smaller logo for mobile */
+        height: auto;  /* Maintain aspect ratio */
+    }
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 10vh;
+        background-color: #232323;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav a {
+        color: rgb(231, 216, 216);
+    }
+
+    nav a:hover {
+        color: #f7f7f7;
+        text-decoration: none;
+    }
+}
+
+/* Activate the menu on mobile */
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}

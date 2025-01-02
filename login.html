@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-KidSmart</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="kidsmart-login">
+        <form class="login-form">
+            <img src="images/logo/KidSmart_logo.png" alt="KidSmart Logo">
+            <h1 class="heading">Welcome to KidSmart. One stop solution for all your kid's problems.</h1>
+            <p>Please login to your account</p>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <span id="toggle-password" class="eye-icon">👁️</span>
+            </div>
+
+            <div class="forgot">
+                <label><input type="checkbox"> Keep me signed in</label>
+                <a href="forgetpass.html">Forget Password?</a>
+            </div>
+
+            <button class="login" type="submit">Login</button>
+            <a href="signup.html" class="signup-link">Don't have an account? Signup</a>
+        </form>
+
+        <div class="poster">
+            <!-- Background image or poster content -->
+        </div>
+    </div>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
