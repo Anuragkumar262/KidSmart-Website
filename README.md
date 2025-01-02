@@ -3,7 +3,7 @@ To download (clone) the KidSmart-Website repository from GitHub to your local sy
 1. Install Git (if you don't have it already)
 Windows: Download and install Git from here.
 macOS: You can install Git via Homebrew or by downloading it from here.
-
+bash
 sudo apt install git
 
 2. Clone the Repository:
